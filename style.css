@@ -1,63 +1,99 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fce4ec;
-    color: #333;
+* {
     margin: 0;
-    ding: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Gradasi biru tua / navy gelap */
+    color: #f1f2f6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: #1e272e; /* Kotak kartu warna gelap elegan */
+    width: 100%;
+    max-width: 480px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0abde3; /* Bingkai foto biru terang */
+    margin-bottom: 15px;
 }
 
 h1 {
-    text-align: center;n
-    color: #d81b60;
-    background-color: #f8bbd0;
-    padding: 20px;
-    border-radius: 15px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #3d3d3d;
+    padding-bottom: 10px;
 }
 
-h2 {
-    color: #c2185b;
-    border-bottom: 2px solid #f48fb1;
-    padding-bottom: 8px;
-    margin-top: 30px;
+.info-section {
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-body > p,
-ul,
-img {
-    margin-left: 20px;
+.info-section h2 {
+    font-size: 16px;
+    color: #48dbfb; /* Warna judul kecil biru cerah */
+    margin-bottom: 8px;
+    margin-top: 15px;
+    border-left: 3px solid #0abde3;
+    padding-left: 8px;
 }
 
-p {
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-img {
-    display: block;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #f48fb1;
-    margin: 20px auto;
+.info-section p, .info-section li {
+    font-size: 14px;
+    color: #dcdde1; /* Warna teks terang agar mudah dibaca di latar gelap */
+    line-height: 1.6;
 }
 
 ul {
-    background-color: white;
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
 }
 
-li {
-    margin: 10px 0;
-    font-size: 17px;
+.quote {
+    font-style: italic;
+    background: #2f3640;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border-left: 3px solid #0abde3;
+    font-size: 13px;
+    color: #f1f2f6;
 }
 
-p:last-child {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    color: #ad1457;
-    font-weight: bold;
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    background: #0abde3; /* Tombol warna biru terang */
+    color: #1e272e;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background: #48dbfb;
 }
